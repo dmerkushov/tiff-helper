@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>ru.dmerkushov</groupId>
+  <artifactId>tiff-helper</artifactId>
+  <version>1.4.1</version>
+  <packaging>jar</packaging>
+
+  <name>tiff-helper</name>
+  <url>http://dmerkushov.ru</url>
+
+  <distributionManagement>
+    <repository>
+      <id>ftp.dmerkushov.ru</id>
+      <url>ftp://ftp.dmerkushov.ru/repository</url>
+    </repository>
+  </distributionManagement>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <extensions>
+      <!-- Enabling the use of FTP for deployment -->
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ftp</artifactId>
+         <version>2.5</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>ru.dmerkushov</groupId>
+      <artifactId>os-helper</artifactId>
+      <version>[1.4.0,)</version>
+    </dependency>
+    <dependency>
+      <groupId>tiffrenderer</groupId>
+      <artifactId>tiffrenderer</artifactId>
+      <version>0.9</version>
+      <type>jar</type>
+    </dependency>
+    <dependency>
+      <groupId>ru.dmerkushov</groupId>
+      <artifactId>log-helper</artifactId>
+      <version>[1.4.0,)</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
