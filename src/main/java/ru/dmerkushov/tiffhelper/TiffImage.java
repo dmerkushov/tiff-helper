@@ -347,7 +347,7 @@ public class TiffImage {
 	/**
 	 * Set a new width for the image
 	 *
-	 * @param width
+	 * @param newWidth
 	 */
 	public void setWidth (int newWidth) throws TiffHelperException {
 		int newHeight = getHeight ();
@@ -369,7 +369,7 @@ public class TiffImage {
 	 * position (0,0) of the new image in its bounds. The old image data that
 	 * exceeds the new bounds is lost.
 	 *
-	 * @param width
+	 * @param newWidth
 	 * @param newHeight
 	 */
 	public void setWidthHeight (int newWidth, int newHeight) throws TiffHelperException {
@@ -409,8 +409,6 @@ public class TiffImage {
 
 	/**
 	 * Making all the pixels array white
-	 *
-	 * @param pixels
 	 */
 	public void initializePixelsArray () {
 		initializePixelsArray (pixels);
@@ -457,7 +455,7 @@ public class TiffImage {
 
 	/**
 	 * Set Y resolution in resolution units
-	 * @param xResolution 
+	 * @param yResolution 
 	 * @see TiffImage#getResolutionUnit()
 	 * @see TiffImage#setResolutionUnit()
 	 */
