@@ -476,7 +476,6 @@ public class TiffImage {
 
 	/**
 	 * Set the resulution unit for this image
-	 * @return 
 	 * @see TiffImage#RESOLUTION_UNIT_CENTIMETER
 	 * @see TiffImage#RESOLUTION_UNIT_INCH
 	 * @see TiffImage#RESOLUTION_UNIT_NONE
