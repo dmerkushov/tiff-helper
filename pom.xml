@@ -3,7 +3,7 @@
 
 	<groupId>ru.dmerkushov</groupId>
 	<artifactId>tiff-helper</artifactId>
-	<version>1.5.0</version>
+	<version>1.5.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>tiff-helper</name>
