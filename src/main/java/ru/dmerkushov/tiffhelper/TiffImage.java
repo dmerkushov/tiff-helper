@@ -426,7 +426,7 @@ public class TiffImage {
 	 *
 	 * @return
 	 * @see TiffImage#getResolutionUnit()
-	 * @see TiffImage#setResolutionUnit()
+	 * @see TiffImage#setResolutionUnit(char) 
 	 */
 	public long getXResolution () {
 		return xResolution[0][0];
@@ -437,7 +437,7 @@ public class TiffImage {
 	 *
 	 * @return
 	 * @see TiffImage#getResolutionUnit()
-	 * @see TiffImage#setResolutionUnit()
+	 * @see TiffImage#setResolutionUnit(char)
 	 */
 	public long getYResolution () {
 		return yResolution[0][0];
@@ -447,7 +447,7 @@ public class TiffImage {
 	 * Set X resolution in resolution units
 	 * @param xResolution 
 	 * @see TiffImage#getResolutionUnit()
-	 * @see TiffImage#setResolutionUnit()
+	 * @see TiffImage#setResolutionUnit(char)
 	 */
 	public final void setXResolution (long xResolution) {
 		this.xResolution[0][0] = xResolution;
@@ -457,7 +457,7 @@ public class TiffImage {
 	 * Set Y resolution in resolution units
 	 * @param yResolution 
 	 * @see TiffImage#getResolutionUnit()
-	 * @see TiffImage#setResolutionUnit()
+	 * @see TiffImage#setResolutionUnit(char)
 	 */
 	public final void setYResolution (long yResolution) {
 		this.yResolution[0][0] = yResolution;
